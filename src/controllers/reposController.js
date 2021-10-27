@@ -6,6 +6,6 @@ const getRepos = async (req, res) => {
   return res.status(repos.resp.status).json(repos.resp.content);
 };
 
-module.exposts = {
+module.exports = {
   getRepos,
 };

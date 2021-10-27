@@ -1,4 +1,5 @@
 const Joi = require('joi');
+// const { parse, stringify } = require('flatted');
 const reposModel = require('../models/reposModel');
 
 const genericError = {
@@ -10,12 +11,12 @@ const genericError = {
 } };
 
 const getRepos = async (info) => {
-  const repos = reposModel.getRepos(info);
   try {
+    const repos = await reposModel.getRepos(info);
     return {
       resp: {
         status: 200,
-        content: repos,
+        content: repos.data,
       },
     };
   } catch (e) { return genericError; }
