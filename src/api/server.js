@@ -11,6 +11,7 @@ const { PORT = 3000 } = process.env;
 
 app.use(bodyParser.json());
 
-app.get('/repos', reposController.getRepos);
+// const { org, sort, dir, qnt }
+app.get('/repos/:org/:sort/:dir/:qnt/:lang', reposController.getRepos);
 
 app.listen(PORT, () => console.log(`Conectado na porta ${PORT}`));
