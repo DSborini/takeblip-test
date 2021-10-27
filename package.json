@@ -1,5 +1,5 @@
 {
-  "name": "takeBlip_test",
+  "name": "takeblip-test",
   "version": "1.0.0",
   "description": "",
   "main": "./src/api/server.js",
@@ -38,8 +38,5 @@
     "joi": "^17.4.2",
     "node-fetch": "^3.0.0",
     "pm2": "^5.1.2"
-  },
-  "optionalDependencies": {
-    "fsevents": "2.1.2"
-    }
+  }
 }
