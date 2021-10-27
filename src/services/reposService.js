@@ -1,4 +1,3 @@
-// const Joi = require('joi');
 const reposModel = require('../models/reposModel');
 
 const genericError = {
