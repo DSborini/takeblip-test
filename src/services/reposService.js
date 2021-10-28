@@ -25,7 +25,7 @@ const getEssentialInfo = (repos) => {
   return filter;
 };
 
-// Source: https://forum.blip.ai/t/acessando-dados-de-um-array-de-objetos/11860/11s
+// Source: https://forum.blip.ai/t/acessando-dados-de-um-array-de-objetos/
 const arrayToDictionary = (array) => {
   const dictionary = {};
   array.forEach((value, index) => {
