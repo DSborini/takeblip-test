@@ -37,7 +37,7 @@ Unico edpoint da aplicação, responsável por retornar dados de repositórios p
 - ``` sort ``` : opção de ordenação dos repositórios, podendo ser "created", "updated", "pushed", "full_name";
 - ``` dir ``` : opção de ordenação dos repositórios, podendo ser "asc" (crescente) ou "desc" (decrescente);
 - ``` qnt ``` : quantidade desejada de repositórios para serem verificados (isso não garante a mesma quantidade no retorno final);
-- ``` lang ``` : linguagem do desejada do repositório, como "JavaScript" ou "C#" por exemplo (atenção à caracteres especiais);
+- ``` lang ``` : linguagem desejada do repositório, como "JavaScript" ou "C#" por exemplo (atenção à caracteres especiais);
 
 Por exemplo, caso eu deseje verificar 20 repositórios da Take Blip, e retornar apenas os feitos em C#, pela data de criação de maneira crescente, o endpoint seria: ``` /repos/takenet/created/asc/20/C%23 ```.
 Os dados serão tratados e retornados em objetos, com as informações essenciais (aquelas utilizadas pelo bot), semelhante à seguinte forma:
